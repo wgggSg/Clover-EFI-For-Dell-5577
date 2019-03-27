@@ -176,7 +176,7 @@
 				<key>Make shift + caps into Fn key</key>
 				<true/>
 				<key>Num Lock enabled at boot</key>
-				<false/>
+				<true/>
 				<key>Swap alt and windows key</key>
 				<true/>
 			</dict>
