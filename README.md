@@ -30,7 +30,23 @@
   本人也是先后折腾了不少硬件（也有折腾黑苹果之前换的），所以总体配置也是和笔记本原版配置有所差别，不过感觉除了网卡（***BCM94352z***），换的硬件都是对无关紧要的，同型号食用应该问题不大。
 
 ## 日志
-### 2019.3.26 上传 **更新Clover4903及部分驱动版本**
+### 2019.4.24
+#### 音频插口声音解决方案！！！
+**步骤：**
+* 解压 *TOOLS.zip* 压缩包
+* 一： *EFI/CLOVER/kexts/other/* 中存放 **CodecCommander.kext** 文件 (*TOOLS/* 下) ，插入耳机**播放音乐**，执行 *install安装.command* 文件 (*TOOLS/ALCPlugFix/* 下) ，重启
+* 二： 执行 *uninstall卸载.command* 文件，删除 **CodecCommander.kext** 文件，将 **VerbStub.kext** 文件 (*TOOLS/ComboJack_Installer* 下) 放到 *EFI/CLOVER/kexts/other/* 下，执行 **install.sh**，重启即可
+
+* （感谢一起吃苹果的群友分享！！）
+
+      刚开始我很困惑为什么ALCPlugFix及CodecCommander.kext要安装后再卸载，于是我看了一下install和uninstall的代码，发现原来是为了在/usr/bin中保留hda-verb文件，而在ComboJack_Installer中也有hda-verb文件，所以我觉得第一步是可以简化的，即：
+      sudo cp -a "$path/hda-verb" /usr/bin
+      sudo chmod 755 /usr/bin/hda-verb
+      sudo chown root:wheel /usr/bin/hda-verb
+      但是原步骤中指出必须先安装CodecCommander.kext，怕又是一个无比深的坑，再加上懒癌晚期（雾），我也没有继续再折腾哈哈哈哈哈，有时间的小伙伴有兴趣可以弄一下啊，或者可能有细节我没注意到，希望大佬指正！！！
+
+### 2019.3.26
+* **更新Clover4903及部分驱动版本**
 
 ### 2019.2.9 上传 **全新EFI**
 #### 更新内容
