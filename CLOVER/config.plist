@@ -318,6 +318,10 @@
 		<string>Theme</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
+		<key>Legacy</key>
+		<string>LegacyBiosDefault</string>
+		<key>LegacyBiosDefaultEntry</key>
+		<integer>1</integer>
 		<key>Log</key>
 		<false/>
 		<key>NeverHibernate</key>
@@ -327,7 +331,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>2</integer>
+		<integer>3</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -535,6 +539,7 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 			<string>Legacy</string>
+			<string>Windows</string>
 		</array>
 		<key>Mouse</key>
 		<dict>
