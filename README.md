@@ -1,9 +1,9 @@
 # Clover-EFI-For-Dell-5577
 
-  从2018年10月1日利用课下时间折腾Hackintosh，断断续续，中间也曾因配置文件不完美放弃折腾投奔*ArchLinux*，最后还是遵循了真香定律（手动滑稽）。  
+  从2018年10月1日利用课下时间折腾Hackintosh，断断续续，中间也曾因  配置文件不完美放弃折腾投奔*ArchLinux*，最后还是遵循了真香定律（手动滑稽）。  
   双十二弃Linux，回归黑果，以前没能解决的问题不知道为什么突然解决了，也就顺其自然地折腾好了属于自己电脑的Clover文件，分享一下。  
   ### 这份EFI配置文件不全是自己的劳动成果，其中结合了很多前辈的Clover配置文件  
-  * 黑果小兵大大 **macOS Mojave 10.14.2 18C54 正式版 with Clover 4792原版镜像** 中含有的EFI配置文件 
+  * **daliansky**大佬制作的EFI配置文件及教程
   * Dell 7520（好像是这个，具体型号忘记了...）  
        可能是DELL主板有相似之处吧，这个型号完美EFI的其中一部分文件在我的本子上是可用的  
   * Dell 5577在*osx 10.13*下的EFI文件。   
@@ -38,6 +38,7 @@
 * 删除部分无用文件
 
 #### Catalina
+![Catalina 2019-10-12 PM10.58.21](https://raw.githubusercontent.com/imAmouse/Clover-EFI-For-Dell-5577/master/ScreenSnap/Catalina%202019-10-12%20PM10.58.21.png)
 * 大部分功能正常
 * `BCM94352z`Wi-Fi开机会卡一段时间才可用，蓝牙不可用
 * 关机速度变慢
@@ -47,7 +48,7 @@
 #### 音频插口声音解决方案！！！
 **步骤：**
 * 解压 *TOOLS.zip* 压缩包
-* 一： *EFI/CLOVER/kexts/other/* 中存放 **CodecCommander.kext** 文件 (*TOOLS/* 下) ，插入耳机**播放音乐**，执行 *install安装.command* 文件 (*TOOLS/ALCPlugFix/* 下) ，重启
+* 一： `EFI/CLOVER/kexts/other/` 中存放 **CodecCommander.kext** 文件 (*TOOLS/* 下) ，插入耳机**播放音乐**，执行 *install安装.command* 文件 (`TOOLS/ALCPlugFix/` 下) ，重启
 * 二： 执行 *uninstall卸载.command* 文件，删除 **CodecCommander.kext** 文件，将 **VerbStub.kext** 文件 (*TOOLS/ComboJack_Installer* 下) 放到 *EFI/CLOVER/kexts/other/* 下，执行 **install.sh**，重启即可
 
 * （感谢一起吃苹果的群友分享！！）
@@ -57,6 +58,7 @@
       sudo chmod 755 /usr/bin/hda-verb
       sudo chown root:wheel /usr/bin/hda-verb
       但是原步骤中指出必须先安装CodecCommander.kext，怕又是一个无比深的坑，再加上懒癌晚期（雾），我也没有继续再折腾哈哈哈哈哈，有时间的小伙伴有兴趣可以弄一下啊，或者可能有细节我没注意到，希望大佬指正！！！
+      2019.10.13:实践证明是我想多了qwq...一定要严格按照步骤执行！！
 
 ### 2019.3.26
 * **更新Clover4903及部分驱动版本**
