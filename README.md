@@ -32,7 +32,7 @@
 ## 日志
 
 ### 2020.01.08 小修复
-* 修复Catalina（10.15）蓝牙失效问题<br>
+* 修复Catalina（10.15）DW1560蓝牙失效问题<br>
   * `BrcmPatchRAM2.kext` -> `BrcmPatchRAM3.kext`<br>
   * 添加 `BrcmBluetoothInjector.kext`<br>
 
