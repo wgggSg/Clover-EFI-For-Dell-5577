@@ -30,6 +30,16 @@
   本人也是先后折腾了不少硬件（也有折腾黑苹果之前换的），所以总体配置也是和笔记本原版配置有所差别，不过感觉除了网卡（***BCM94352z***），换的硬件都是对无关紧要的，同型号食用应该问题不大。
 
 ## 日志
+
+### 2020.01.08 小修复
+* 修复Catalina（10.15）蓝牙失效问题<br>
+  * `BrcmPatchRAM2.kext` -> `BrcmPatchRAM3.kext`<br>
+  * 添加 `BrcmBluetoothInjector.kext`<br>
+
+            由于我升级到10.15版本之后没有再退回到10.14尝试，所以如果使用Mojave（10.14）版本，
+            可能需要删除 BrcmBluetoothInjector.kext 并将 BrcmPatchRAM3.kext 替换为 BrcmPatchRAM2.kext（位于/CLOVER/kexts/Other/off文件夹内）
+* 关机速度恢复
+
 ### 2019.10.13 支持Catalina
 #### 更新内容
 * 可更新至Catalina
