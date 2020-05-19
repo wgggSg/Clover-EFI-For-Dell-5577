@@ -43,7 +43,7 @@
   * x86电源管理（CPU）
 * 删除了很多config.plist中的冗余选项（config.plist）及冗余文件（/driver,/kext...）
 * 更新Clover及kext驱动
-  * `Clover Release v5.0 r5117`
+  * `Clover Release v5.0 r5116`
   * `AirportBrcmFixup v2.0.7`
   * `AppleALC v1.5.0`
   * `Lilu v1.4.4`
