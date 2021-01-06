@@ -142,3 +142,9 @@
 * 键盘FN仍不能调节亮度（在系统快捷键中手动设置快捷键可调节）
 
          进入GitHub，从这里用到了不少网友们的劳动成果，也学到了很多实用的知识，我也想分享一下我的学习成果，希望自己能够对这个环境贡献一下:)
+         
+## 扶贫
+如果我的分享对你有帮助，可以请我喝肥宅快乐水来支持我！（：xiexie！！
+支付宝|微信
+---|---
+![Catalina 2019-10-12 PM10.58.21](https://raw.githubusercontent.com/wgggSg/OpenCore-For-DELL-5577/master/Pictures/alipay.jpg)|![Catalina 2019-10-12 PM10.58.21](https://raw.githubusercontent.com/wgggSg/OpenCore-For-DELL-5577/master/Pictures/wxpay.png)
