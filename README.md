@@ -32,6 +32,8 @@
 
 ## 日志
 
+### 2021.01.06 [OpenCore](https://github.com/wgggSg/OpenCore-For-DELL-5577)已更新，可以安装Big Sur
+
 ### 2020.05.29 配置完善[OpenCore](https://github.com/wgggSg/OpenCore-For-DELL-5577)
 &emsp;&emsp;又到了久违的星期五，又抽出了宝贵的学（游）习（戏）时光看了一下上个周配置OpenCore留下的问题，终于找到了！！果然有时刻意去解决问题是找不到解决方法的，上个周怎么也找不到的问题这个周肥肠顺利的就解决了🥳嘿嘿
 * 主要特性与上一次日志一致
